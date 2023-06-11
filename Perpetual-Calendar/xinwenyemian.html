@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>新闻列表</title>
+		<link rel="stylesheet" href="js/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.wrap {
+				width: 600px;
+				margin: 0px auto;
+
+			}
+
+			.menu {
+				width: 600px;
+				height: 30px;
+				background: cornflowerblue;
+				position: sticky;
+				top: 0px;
+			}
+
+			.menu ul li {
+				float: left;
+				list-style-type: none;
+				padding: 0 40px;
+			}
+
+			.content ul li img:hover {
+				transform: scale(1.2);
+				/*当鼠标移动到图片上时实现放大功能*/
+			}
+
+			.content ul li {
+				height: 100px;
+				overflow: hidden;
+				border-bottom: 1px solid lavender;
+				background: white;
+				list-style-type: none;
+				transition-duration: 0.5s;
+				margin: 10px 10px 5px 0;
+
+			}
+
+			.content ul li:hover {
+				background-color: lavender;
+				transition-duration: 0.5s;
+			}
+
+			.content .left {
+				overflow: hidden;
+				/*隐藏溢出图片内容*/
+				transition-duration: 0.5s;
+				width: 140px;
+				height: 80px;
+				/*background: green;*/
+				float: left;
+				margin-right: 20px;
+			}
+
+			.content .right {
+				width: 400px;
+				float: left;
+				/*background: pink;*/
+			}
+
+			.right_top {
+				height: 60px;
+			}
+
+			.right_top a {
+				color: #00060c;
+			}
+
+			.right_bottom {
+				margin_top: 50px;
+			}
+
+			.right_bottom_left span {
+				color: darkgray;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="row">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">今日热点</a>
+					</div>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="输入...">
+						</div>
+						<button type="submit" class="btn btn-default">搜索</button>
+					</form>
+					<div class="navbar-beader">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="./index.html">回到首页</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="content">
+				<ul>
+					<li>
+						<div class="left" id="yh"><a href="https://news.cctv.com/2023/05/17/ARTIP7zQevoc00hisCDVGKXk230517.shtml">
+						<img src="./img/3.jpeg"></a>
+								 </div>
+						<div class="right">
+							<div class="right_top">
+								<a href="https://news.cctv.com/2023/05/17/ARTIP7zQevoc00hisCDVGKXk230517.shtml" target="top">
+									<h3>世卫组织最新报告显示：全球每7秒就有一名孕妇或新生儿死亡</h3>
+								</a>
+							</div>
+							<div class="right_bottom">
+								<div class="right_bottom_left">
+									<span>诺伊尔</span> <span>世界杯</span> <span>德国</span> <span>|</span> <span>7小时前</span>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="left"><img src="../img/new2.png" alt=""></div>
+						<div class="right">
+							<div class="right_top">
+								<h3>世卫组织最新报告显示：全球每7秒就有一名孕妇或新生儿死亡</h3>
+							</div>
+							<div class="right_bottom">
+								<div class="right_bottom_left">
+									<span>诺伊尔</span> <span>世界杯</span> <span>德国</span> <span>|</span> <span>7小时前</span>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="left"><img src="../img/new1.png" alt=""></div>
+						<div class="right">
+							<div class="right_top">
+								<h3>世卫组织最新报告显示：全球每7秒就有一名孕妇或新生儿死亡</h3>
+							</div>
+							<div class="right_bottom">
+								<div class="right_bottom_left">
+									<span>诺伊尔</span> <span>世界杯</span> <span>德国</span> <span>|</span> <span>7小时前</span>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="left"><img src="../img/new1.png" alt=""></div>
+						<div class="right">
+							<div class="right_top">
+								<h3>世卫组织最新报告显示：全球每7秒就有一名孕妇或新生儿死亡</h3>
+							</div>
+							<div class="right_bottom">
+								<div class="right_bottom_left">
+									<span>诺伊尔</span> <span>世界杯</span> <span>德国</span> <span>|</span> <span>7小时前</span>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="left"><img src="../img/new1.png" alt=""></div>
+						<div class="right">
+							<div class="right_top">
+								<h3>世卫组织最新报告显示：全球每7秒就有一名孕妇或新生儿死亡</h3>
+							</div>
+							<div class="right_bottom">
+								<div class="right_bottom_left">
+									<span>诺伊尔</span> <span>世界杯</span> <span>德国</span> <span>|</span> <span>7小时前</span>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="left"><img src="../img/new1.png" alt=""></div>
+						<div class="right">
+							<div class="right_top">
+								<h3>世卫组织最新报告显示：全球每7秒就有一名孕妇或新生儿死亡</h3>
+							</div>
+							<div class="right_bottom">
+								<div class="right_bottom_left">
+									<span>诺伊尔</span> <span>世界杯</span> <span>德国</span> <span>|</span> <span>7小时前</span>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="left"><img src="../img/new1.png" alt=""></div>
+						<div class="right">
+							<div class="right_top">
+								<h3>世卫组织最新报告显示：全球每7秒就有一名孕妇或新生儿死亡</h3>
+							</div>
+							<div class="right_bottom">
+								<div class="right_bottom_left">
+									<span>诺伊尔</span> <span>世界杯</span> <span>德国</span> <span>|</span> <span>7小时前</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+	</body>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(":input").css("background-color", "#8fdbe1");
+		});
+		// 表单选择器
+		$(document).ready(function() {
+			$("h3").css("font-size", "25px");
+		});
+		// 元素选择器
+		
+	</script>
+</html>

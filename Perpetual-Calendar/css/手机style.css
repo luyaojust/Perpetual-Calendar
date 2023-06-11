@@ -1,0 +1,141 @@
+.weui-tabbar {
+	position: fixed;
+}
+
+.swiper-slide img {
+	width: 100%;
+	height: auto;
+}
+
+.swiper-container {
+	margin-top: 55px;
+}
+
+.weui-navbar {
+	background-color: aqua;
+}
+
+.weui-navbar__item {
+	color: #f1f1f1;
+}
+
+.weui-navbar__item.weui-bar__item--on {
+	color: #FFFFFF;
+	background-color: #FFC0CB;
+}
+
+.weui-tabbar__item {
+	color: darkgreen;
+}
+
+.weui-tabbar__label {
+	color: #FFFFFF;
+}
+
+.weui-tabbar {
+	background-color: #FFC0CB;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main {
+	width: 380px;
+	height: 370px;
+	margin: 30px auto;
+	position: relative;
+}
+
+button {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: pink;
+	font-size: 12px;
+	text-align: center;
+	line-height: 30px;
+	border: none;
+	position: absolute;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	user-select: none;
+}
+#remarkbtton{
+	color: #FFFFFF;
+	width: 30px;
+	height: 30px;
+	background-color: pink;
+	font-size: 12px;
+	/* text-align: center; */
+	
+}
+
+.prev {
+	top: 10px;
+	left: 6%;
+}
+
+.next {
+	top: 10px;
+	right: 6%;
+}
+
+.nowTime {
+	width: 100px;
+	position: absolute;
+	top: 15px;
+	right: calc(50% - 45px);
+	font-size: 19px;
+	font-weight: bold;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.container {
+	width: 350px;
+	margin: 50px auto;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: calc(50% - 190px);
+	left: calc(50% - 175px);
+
+}
+
+.container ul:first-of-type {
+	background: rgb(245, 195, 195);
+	color: rgb(43, 40, 40);
+}
+
+.container ul {
+	width: 350px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.container li {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+}
+
+.container li:not(.disabled):hover {
+	background: rgb(255, 174, 208);
+}
+
+li.disabled {
+	background: rgb(252, 238, 238);
+	cursor: not-allowed;
+	color: rgb(206, 206, 206);
+}
+
+li.active {
+	background: rgb(255, 206, 214);
+}

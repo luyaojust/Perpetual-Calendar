@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="./js/jquery-3.1.0.min.js"></script>
+		<link rel="stylesheet" href="./js/bootstrap-3.4.1-dist/css/bootstrap.css">
+		<script src="./js/jquery-3.1.0.js"></script>
+		<script src="./js/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+		<title>四季美图</title>
+		<script>
+			$.ajax({
+				type: "get",
+				url: "./imgData.json",
+				data: {},
+				dataType: "json",
+				success: function(data) {
+					console.log(data);
+					for (var i = 0; i < data.length; i++) {
+						var user = data[i];
+						// var img = '<img scr="user.dz">'
+						var img = $(
+							`
+		                <div class='item ${i === 0 ? 'active' : ''}'>
+		                <img decoding='async' src='${user.dz}'>
+		                </div>
+		                `
+						);
+						console.log(img);
+						$(".carousel-inner").append(img);
+					}
+				}
+			})
+		</script>
+		    <style type="text/css">
+		        * {
+		            margin: 0;
+		            padding: 0;
+		        }
+		        
+		        ul {
+		            list-style: none;
+		        }
+		        
+		        .wrap {
+		            margin: 100px auto 0;
+		            width: 1335px;
+		            height: 100%px;
+		            padding: 10px 0 0 10px;
+		            background: #e7667d;
+		            overflow: hidden;
+		            border: 1px solid #fff;
+					
+		        }
+		          
+		        .wrap li {
+		            float: left;
+		            margin: 0 10px 10px 0;
+		        }
+		        
+		        .wrap img {
+		            display: block;
+		            border: 0;
+		        }
+		    </style>
+
+			    <script>
+			        $(function() {
+			            //鼠标进入的时候,其他的li标签透明度：0.3
+			            $(".wrap li").hover(function() {
+			                $(this).siblings().stop().fadeTo(200, 0.3);
+			            }, function() {
+			                // 鼠标离开，其他li 透明度改为 1
+			                $(this).siblings().stop().fadeTo(200, 1);
+			            });
+			        });
+			    </script>
+	</head>
+	<body>
+		<div>
+		<div id="myCarousel" class="carousel slide">
+			<!-- 轮播（Carousel）指标 -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				
+			</ol>
+			<!-- 轮播（Carousel）项目 -->
+			<div class="carousel-inner">
+			</div>
+			<!-- 轮播（Carousel）导航 -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<div class="wrap" style="text-align: center;">
+			<a href="index.html">回到主页</button>
+		        <ul>
+		            <li>
+		                <a href="#"><img src="img/xiaochun.png" alt="" title="春天的美丽"/></a>
+		            </li>
+		            <li>
+		                <a href="#"><img src="img/xiaoxia.png" alt="" title="夏天的美丽"/></a>
+		            </li>
+		            <li>
+		                <a href="#"><img src="img/xiaoqiu.png" alt="" title="秋天的美丽"/></a>
+		            </li>
+		            <li>
+		                <a href="#"><img src="img/xiaodong.png" alt="" title="冬天的美丽"/></a>
+		            </li>
+		        </ul>
+		    </div>
+			</div>
+	</body>
+	
+</html>

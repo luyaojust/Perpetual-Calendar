@@ -1,0 +1,90 @@
+
+.mj-nav {
+    font-size: 0;
+    margin-left: 30px
+}
+
+.MC .mj-nav-a {
+    padding: 0;
+    margin-bottom: 1px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
+
+.mj-nav-a.on .mj-nav-b,
+.mj-nav-a:hover .mj-nav-b {
+    color: #000;
+    border-bottom: 2px solid #999
+}
+
+.mj-nav-a {
+    font-size: 0;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    cursor: default;
+}
+
+.mj-nav-b {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 16px;
+    display: block;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    line-height: 68px;
+}
+
+.mj-mcmenu {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+.mj-mcmenu-box {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    transition: all .2s linear;
+    overflow-x: hidden;
+    background-color: #fff;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.mj-mcmenu.on .mj-mcmenu-box {
+    width: 60%;
+}
+
+.mj-mcmenu-body {
+    padding: 10px;
+}
+
+.yj-logo-name {
+    display: inline-block;
+    border-left: 1px solid #666;
+    height: 20px;
+    font-weight: 900;
+    padding-left: 15px;
+    margin-top: 13px;
+    font-size: 30px;
+}
+
+.yj-top-nav {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 70px;
+}
